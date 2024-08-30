@@ -18,12 +18,12 @@ public class Exam02 {
 		
 	}
 	static boolean checkEvenOdd(int num) {
-		
-		if(num%2 == 0) {
+		return num%2 == 0 ? true : false;
+/*		if(num%2 == 0) {
 			return true;
 		}
 		
-		return false;
+		return false;*/
 	}
 	
 	public static int inputNumberWithValidation() throws IOException{
