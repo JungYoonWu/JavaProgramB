@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class BankApplication {
 	
-	Account[] accounts = new Account[100];
-	int accountCnt = 0;
+	private Account[] accounts = new Account[100];
+	private int accountCnt = 0;
 	
 	String[] menuList = {"1.계좌생성", "2.계좌목록", "3.예금", "4.출금", "5.종료"};
 	
@@ -58,7 +58,7 @@ public class BankApplication {
 	public void showAccountList() {
 		System.out.println("[계좌목록 실행 결과]");
 		for(int i = 0; i < accountCnt; i++) {
-			System.out.println(accounts[i].getAccountNum() + "   " + accounts[i].accountHolder + "   " + accounts[i].accountMoney);
+			System.out.println(accounts[i].getAccountNum() + "   " + accounts[i].getAccountHolder() + "   " + accounts[i].getAccountMoney());
 		}
 	}
 	
