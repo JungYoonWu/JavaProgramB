@@ -12,12 +12,11 @@ public class Cat {
 	}
 	
 	public Cat(String breed, String color) {
-		this.breed = breed;
-		this.color = color;
+		this(breed, color, 5);
 	}
 	
 	public Cat(String breed) {
-		this.breed = breed;
+		this(breed, "갈색", 5);
 	}
 	
 	public void eat(String time) {
