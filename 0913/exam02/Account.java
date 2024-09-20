@@ -1,9 +1,9 @@
 package kr.ac.kopo.day03.exam02;
 
 public class Account {
-	String accountNum;
-	String accountHolder;
-	int accountMoney;
+	private String accountNum;
+	private String accountHolder;
+	private int accountMoney;
 	
 	
 	public Account(String accountNum, String accountHolder, int accountMoney) {
